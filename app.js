@@ -12,7 +12,7 @@ const cors = require("cors");
 
 // import Mongoose
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/db_staycation", {
+mongoose.connect("mongodb+srv://ahmdsfdn:bwamern@cluster0-nibxr.mongodb.net/db_staycation?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
