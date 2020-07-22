@@ -8,8 +8,6 @@ const session = require("express-session");
 const flash = require("connect-flash");
 const cors = require("cors");
 
-app.use(cors());
-
 // import Mongoose
 const mongoose = require("mongoose");
 mongoose.connect("mongodb+srv://ahmdsfdn:bwamern@cluster0-nibxr.mongodb.net/db_staycation?retryWrites=true&w=majority", {
@@ -72,5 +70,7 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render("error");
 });
+
+app.use(cors());
 
 module.exports = app;
