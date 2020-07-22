@@ -8,7 +8,7 @@ const session = require("express-session");
 const flash = require("connect-flash");
 const cors = require("cors");
 
-// app.use(cors());
+app.use(cors());
 
 // import Mongoose
 const mongoose = require("mongoose");
