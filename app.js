@@ -70,7 +70,7 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 
-const cors = require("cors");
+var cors = require('cors');
 app.use(cors());
 
 module.exports = app;
